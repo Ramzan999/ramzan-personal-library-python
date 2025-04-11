@@ -1,0 +1,34 @@
+[
+  {
+    "title": "python crash course",
+    "author": "Eric Matthes",
+    "publication_years": 2019,
+    "genre": "Programming",
+    "read_status": false,
+    "added_date": "2025-03-25 11:23:21"
+  },
+  {
+    "title": "Ethical Hacking",
+    "author": "Albert Wilse",
+    "publication_years": 2013,
+    "genre": "Hacking",
+    "read_status": True,
+    "added_date": "2025-02-14 04:20:33"
+  },
+  {
+    "title": "Fluent Python",
+    "author": "Ramalho",
+    "publication_years": 2022,
+    "genre": "Programming",
+    "read_status": false,
+    "added_date": "2025-03-25 10:49:21"
+  },
+  {
+    "title": "Think and Grow Rich",
+    "author": "Nepoleon Hill",
+    "publication_years": 1937,
+    "genre": "the power of one's thoughts, beliefs, and actions in creating wealth and achieving success in life",
+    "read_status": True,
+    "added_date": "2025-03-25 11:23:21"
+  },
+]
