@@ -288,7 +288,7 @@ if lottie_book:
 # Navigation option
 nav_options = st.sidebar.radio(
   "choose an option:",
-  ["View Library", "Add Book", "Search Books", "Library Statistics"])
+  ["View Library", "Add Book", "Search Books", "Library Statistics"]
 )
 
 # Change current view based on navigation
