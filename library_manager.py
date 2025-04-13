@@ -191,10 +191,10 @@ def get_library_state():
 
     # Count Decades
     decades = (book['publication_year'] // 10) * 10
-    if decades in decades:
-      decades[decades] += 1
+    if decade in decades:
+      decades[decade] += 1
     else:
-      decades[decades] = 1
+      decades[decade] = 1
   
   # Sort by count
   genres = dict(sorted(genres.items(), key=lambda x: x[1], reverse=True ))
@@ -385,7 +385,7 @@ elif st.session_state.current_view == "stats":
   if not st.session_state.library:
     st.markdown("<div class='warning-message'> Your library is empty. Add some books to see stats!</div>", unsafe_allow_html=True)
   else:
-    stats = get_library_state()
+    stats = get_library_stats()
     col1,col2, col3 = st.columns(3)
     with col1:
       st.metric("Total Books", stats['total_books'])
