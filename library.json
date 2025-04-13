@@ -12,7 +12,7 @@
     "author": "Albert Wilse",
     "publication_years": 2013,
     "genre": "Hacking",
-    "read_status": True,
+    "read_status": true,
     "added_date": "2025-02-14 04:20:33"
   },
   {
@@ -28,7 +28,7 @@
     "author": "Nepoleon Hill",
     "publication_years": 1937,
     "genre": "the power of one's thoughts, beliefs, and actions in creating wealth and achieving success in life",
-    "read_status": True,
+    "read_status": true,
     "added_date": "2025-03-25 11:23:21"
   },
 ]
