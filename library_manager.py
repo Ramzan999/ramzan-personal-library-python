@@ -283,7 +283,7 @@ st.sidebar.markdown("<h1 style='text-align: center;'>📚 Navigation</h1>", unsa
 lottie_book = load_lottieurl("https://assets9.lottiefiles.com/temp/1f20_aKAfIn.json")
 if lottie_book:
   with st.sidebar:
-    st.lottie(lottie_book, height=200, key='book_animation')
+    st_lottie(lottie_book, height=200, key='book_animation')
 
 # Navigation option
 nav_options = st.sidebar.radio(
