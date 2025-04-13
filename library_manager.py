@@ -216,7 +216,7 @@ def get_library_stats():
 def create_visualizations(stats):
   # Read vs Unread pie chart
   if stats['total_books'] > 0:
-    fig_read_status = go.Figure(data=[go.pie(
+    fig_read_status = go.Figure(data=[go.Pie(
       labels=['Read', 'Unread'],
       values=[stats['read_books'], stats['total_books'] - stats['read_books']],
       hole=.4,
@@ -427,6 +427,7 @@ elif st.session_state.current_view == "stats":
       st.metric("Book Read", stats['read_books'])
     with col3:
       st.metric("Percentage Read", f"{stats['percent_read'] :.1f}%")
+      
     create_visualizations(stats)
 
     if stats['authors']:
