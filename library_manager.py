@@ -29,7 +29,7 @@ st.markdown("""
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
   }
-  .sub_header {
+  .sub-header {
     font-size: 1.8rem !important;
     color: #3882F6;
     font-weight: 600;
@@ -340,10 +340,10 @@ if st.session_state.current_view == "add":
     st.session_state.book_added = False
     
 elif st.session_state.current_view =="library":
-  st.markdown("<h2 class ='sub-header'> Your Library </h2>", unsafe_allow_html=True)
+  st.markdown("<h2 class ='sub-header'>📖 Your Library </h2>", unsafe_allow_html=True)
 
   if not st.session_state.library:
-    st.markdown("<div class='warning message'> Your library is empthy. Add some books to get started!</div>", unsafe_allow_html=True)
+    st.markdown("<div class='warning-message'> Your library is empthy. Add some books to get started!</div>", unsafe_allow_html=True)
   else:
     # Display books in a grid layout
     cols = st.columns(2)
@@ -351,11 +351,11 @@ elif st.session_state.current_view =="library":
       with cols[i % 2]:
         # Book card
         st.markdown(f"""
-        <div class = 'book-card'>
+        <div class='book-card'>
           <h3>{book['title']}</h3>
           <p><strong>Author:</strong>{book['author']}</p>
           <p><strong>Publication Year::</strong>{book['publication_year']}</p>
-          <p><strong>Genre:</strong>{book['genre']}</p>
+          <p><strong>Genre:</strong> {book['genre']}</p>
           <p><span class='{"read-badge" if book["read_status"] else "unread-badge"}'>{
             "Read" if book["read_status"] else "Unread"}</span></p>
         </div>
