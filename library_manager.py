@@ -350,7 +350,7 @@ elif st.session_state.current_view =="library":
   if st.session_state.book_removed:
     st.markdown("<div class='success-message'> Book removed sucessfully!</div>", unsafe_allow_html=True)
     st.session_state.book_removed = False
-elif st.session_state.current.view == "search":
+elif st.session_state.current_view == "search":
   st.markdown("<h2 class='sub-header'> search books</h2>", unsafe_allow_html=True)
 
   search_by = st.selectbox("Search by:", ["Title","Author","Genre"])
