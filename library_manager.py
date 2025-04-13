@@ -244,8 +244,8 @@ def create_visualizations(stats):
     )
     fig_genres.update_layout(
       title_text='Book by genre',
-      xasix_title='Genre',
-      yaxis_titlle='Number of books',
+      xaxis_title='Genre',
+      yaxis_title='Number of books',
       height=400
     )
     st.plotly_chart(fig_genres, use_container_width=True)
@@ -261,12 +261,12 @@ def create_visualizations(stats):
       x='Decade',
       y='Count',
       markers=True,
-      line_sape="spline"
+      line_shape="spline"
     )
     fig_decades.update_layout(
       title_text='Book by publication decade',
-      xasix_title='Decade',
-      yaxis_titlle='Number of books',
+      xaxis_title='Decade',
+      yaxis_title='Number of books',
       height=400
     )
     st.plotly_chart(fig_decades, use_container_width=True)
