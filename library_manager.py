@@ -151,7 +151,7 @@ def remove_book(index):
     save_library()
     st.session_state.book_removed = True
     return True
-  return True
+  return False
 
 # Search books
 def search_books(search_term, search_by):
