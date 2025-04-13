@@ -38,21 +38,18 @@ st.markdown("""
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  
   .sucess-message {
     padding: 1rem;
     background-color: #ECFDF5;
     border-left: 5px solid #10B981;
     border-radius: 0.375rem;
   }
-  
   .warning-message {
     padding: 1rem;
     background-color: #FEF3C7;
     border-left: 5px solid #F59E0B;
     border-radius: 0.375rem;
-  }
-            
+  }         
   .book-card {
     background-color: #F3F4F6;
     border-radius: 0.5rem;
@@ -61,12 +58,10 @@ st.markdown("""
     border-left: 5px solid #3882F6;
     transition: transform 0.3s ease;
   }
-  
   .book-card-hover{
     transform: translateY(-5px);
     box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
   }
-  
   .read-badge {
     background-color: #10B981;
     color: white;
@@ -74,8 +69,7 @@ st.markdown("""
     border-radius: 1rem;
     font-size: 0.875rem;
     font-weight: 600;
-  }
-            
+  }         
   .unread-badge{
     background-color: #F87171;
     color: white;
@@ -83,12 +77,10 @@ st.markdown("""
     border-radius: 1rem;
     font-size: 0.875rem;
     font-weight: 600;
-  }
-            
+  }         
   .action-button {
     margin-right: 0.5rem;
-  }
-            
+  }         
   .stButton>button {
     border-radius: 0.375rem;
   }
@@ -249,7 +241,7 @@ def create_visulations(stats):
     fig_genres.update_layout(
       title_text='Book by publication genres',
       xasix_title='Genres',
-      yaxis_titlle='Number of boooks',
+      yaxis_titlle='Number of books',
       height=400
     )
     st.plotly_chart(fig_genres, use_container_width=True)
