@@ -400,7 +400,7 @@ elif st.session_state.current_view == "search":
 
       for i, book in enumerate(st.session_state.search_results):
         st.markdown(f"""
-        <div class = 'book-card'>
+        <div class='book-card'>
           <h3>{book['title']}</h3>
           <p><strong>Author:</strong>{book['author']}</p>
           <p><strong>Publication Year::</strong>{book['publication_year']}</p>
